@@ -11,7 +11,7 @@ from keras.callbacks import TensorBoard
 EPOCH = 10
 BATCH_SIZE = 1200
 
-# 清除暫存
+# 清除暫存。
 backend.clear_session()
 
 # 只使用40%的GPU記憶體。
