@@ -1,5 +1,5 @@
 # TF1_MNIST_h5_to_tflite
-This is example about using TF1 to train MNIST dataset saving HDF5 parameter and convert to TFLite file with CPU and GPU. Maybe I not sure the TFlite cna work or not \o/.
+This is example about using TF1 to train MNIST dataset saving HDF5 parameter and convert to TFLite file with CPU and GPU. However, I not sure the TFlite can work or not \o/.
 
 TensorFlow version is the 1.15, and details with all package name version is in "tf1.15_py37_package_version.txt" file.
 
