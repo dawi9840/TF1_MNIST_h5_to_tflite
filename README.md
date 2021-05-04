@@ -5,4 +5,8 @@ Tensorflow version: 1.15.
 
 The package name version details in tf1.15_py37_package_version.txt file.
 
+Using python gpu_v2_mnist_keras_train_h5.py can get the result.
 ![123333](https://user-images.githubusercontent.com/19554347/116948851-28e2ae80-acb3-11eb-9151-53efa94ee6f2.PNG)
+
+When we have the HDF5 (.h5) file, we use reload_h5_file.py to check the model training parameter with a summary. 
+![reload](https://user-images.githubusercontent.com/19554347/116949464-dc986e00-acb4-11eb-895e-84972b222175.PNG)
