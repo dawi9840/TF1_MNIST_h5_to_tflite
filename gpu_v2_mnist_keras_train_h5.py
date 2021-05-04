@@ -11,32 +11,32 @@ from keras.callbacks import TensorBoard
 EPOCH = 10
 BATCH_SIZE = 1200
 
-#清除暫存
+# 清除暫存
 backend.clear_session()
 
-#只使用40%的GPU記憶體
+# 只使用40%的GPU記憶體
 gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.4)
 
-sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options,     #啟用gpu控制選項
-                                                            allow_soft_placement=True,   #如果指定的設備不存在，允許TF自動分配設備
-                                                            log_device_placement=True))  #是否檢視設備分配日誌資訊
+sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options,     # 啟用gpu控制選項
+                                                            allow_soft_placement=True,   # 如果指定的設備不存在，允許TF自動分配設備
+                                                            log_device_placement=True))  # 是否檢視設備分配日誌資訊
 
-#設定Keras使用的TensorFlow Session
+# 設定Keras使用的TensorFlow Session
 backend.set_session(sess)
 
-tbCallBack = TensorBoard(log_dir='./logs',             #模型保存目錄
-                         histogram_freq=0,             #是否計算直方圖，0表示不計算
-                         batch_size=32,                #可以進行直方圖計算的預期神經元網絡輸入批的大小
-                         write_graph=True,             #是否儲存計算圖
-                         write_grads=False,            #是否可視化梯度梯度直方圖，histogram_freq 必须要大於 0
-                         write_images=True,            #將模型權重以圖片可視化參數
-                         embeddings_freq=0,            #frequency (in epochs) at which embedding layers will be visualized. If set to 0, embeddings will not be visualized.
-                         embeddings_layer_names=None,  #如果是None或空列表，那麼所有的嵌入層都會被監測。
-                         embeddings_metadata=None,     #一個dictionary 將圖層名稱映射到文件名，該嵌入層的元數據保存在該文件名中。
-                         update_freq='epoch')          #選用epoch次數更新TensorBoard的紀錄
+tbCallBack = TensorBoard(log_dir='./logs',             # 模型保存目錄
+                         histogram_freq=0,             # 是否計算直方圖，0表示不計算
+                         batch_size=32,                # 可以進行直方圖計算的預期神經元網絡輸入批的大小
+                         write_graph=True,             # 是否儲存計算圖
+                         write_grads=False,            # 是否可視化梯度梯度直方圖，histogram_freq 必须要大於 0
+                         write_images=True,            # 將模型權重以圖片可視化參數
+                         embeddings_freq=0,            # frequency (in epochs) at which embedding layers will be visualized. If set to 0, embeddings will not be visualized.
+                         embeddings_layer_names=None,  # 如果是None或空列表，那麼所有的嵌入層都會被監測。
+                         embeddings_metadata=None,     # 一個dictionary 將圖層名稱映射到文件名，該嵌入層的元數據保存在該文件名中。
+                         update_freq='epoch')          # 選用epoch次數更新TensorBoard的紀錄
 
 def show_train_history(train_history,train,validation):
-    #顯示損失率與精確度
+    # 顯示損失率與精確度
     plt.plot(train_history.history[train])
     plt.plot(train_history.history[validation])
     plt.title('Training history')
@@ -46,7 +46,7 @@ def show_train_history(train_history,train,validation):
     plt.show()
 
 def show_multi_image(images, labels, prediction, idx, num=10):
-    #畫出原始圖形、label、預測結果，idx:第0筆開始顯示，預設秀10筆。
+    # 畫出原始圖形、label、預測結果，idx:第0筆開始顯示，預設秀10筆。
     flg=plt.gcf()
     flg.set_size_inches(12,14)
     if num>25: num=25
@@ -116,7 +116,7 @@ with tf.device('/gpu:0'):
 
     backend.clear_session()
 
-    #suppress:是否壓縮由科學計數法表示的浮點數
+    # suppress:是否壓縮由科學計數法表示的浮點數
     np.set_printoptions(suppress=True)
 
     ### Convert to TFLite. ###
