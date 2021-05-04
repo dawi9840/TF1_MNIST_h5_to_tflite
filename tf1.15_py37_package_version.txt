@@ -1,4 +1,11 @@
 (tf1.15_py37) 
+----------------------------------------------------------------------
+OS Platform and Distribution : Windows 10
+TensorFlow version: tensorflow-gpu 1.15.0
+Python version: 3.7.9
+CUDA/cuDNN version: 10.0/ 7.6.5
+GPU model and memory: GTX3080 / 4096 MB
+----------------------------------------------------------------------
 conda list:
 # Name                    Version                   Build  Channel
 _tflow_select             2.1.0                       gpu
