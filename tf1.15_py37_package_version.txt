@@ -1,4 +1,4 @@
-(tf1.15_py37) 
+conda env package name: tf1.15_py37
 ----------------------------------------------------------------------
 OS Platform and Distribution : Windows 10
 TensorFlow version: tensorflow-gpu 1.15.0
