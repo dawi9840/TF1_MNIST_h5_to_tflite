@@ -1,9 +1,7 @@
 # TF1_MNIST_h5_to_tflite
 Use TF1 to train MNIST dataset saving HDF5 parameter and convert to TFLite file.
 
-TensorFlow version: 1.15.
-
-The package name version details in tf1.15_py37_package_version.txt file.
+TensorFlow version is the 1.15, and details with all package name version is in "tf1.15_py37_package_version.txt" file.
 
 Using python gpu_v2_mnist_keras_train_h5.py can get the result.
 
