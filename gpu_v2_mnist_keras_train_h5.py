@@ -126,7 +126,7 @@ with tf.device('/gpu:0'):
 
     converter = tf.lite.TFLiteConverter.from_keras_model_file(model_file=input_graph_name)
 
-    converter.post_training_quantize = True
+    converter.post_training_quantize = False
 
     tflite_model = converter.convert()
 
