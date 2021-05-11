@@ -77,7 +77,7 @@ with tf.device('/cpu:0'):
     y_train = np_utils.to_categorical(y_train)
     y_test = np_utils.to_categorical(y_test)
 
-    # Use Keras to creat model.
+    # Using the delayed-build pattern (no input shape specified) to creat model.
     model = Sequential([
       layers.Conv2D(filters=16,kernel_size=(5,5), padding='same', input_shape=(28,28,1), activation='relu'),
       layers.MaxPool2D(pool_size=(2,2)),
