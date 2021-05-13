@@ -137,7 +137,7 @@ with tf.device('/gpu:0'):
 print("finished!")
 
 ### In your Terminal key the command to start TensorBoard. ###
-# tensorboard --logdir = [Your project path./logs].
+# tensorboard --logdir=[Your project path]./logs.
 
 
 
