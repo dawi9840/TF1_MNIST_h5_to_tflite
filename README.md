@@ -10,3 +10,8 @@ Using python gpu_v2_mnist_keras_train_h5.py can get the result.
 When we have the HDF5 (.h5) file, use reload_h5_file.py to check the model training parameter with a summary.
 
 ![reload](https://user-images.githubusercontent.com/19554347/116949464-dc986e00-acb4-11eb-895e-84972b222175.PNG)
+
+In test_tflite_model.py the result:  
+![Screenshot from 2021-06-29 17-03-24](https://user-images.githubusercontent.com/19554347/123769573-04deca80-d8fc-11eb-8f11-c44690ee31cb.png)
+
+
