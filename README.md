@@ -18,7 +18,7 @@ We can get the input tensor and output tensor format with tf.lite.Interpreter.
 Observe the key 'index' and 'shape' in TFLite model request format.  
 ![Screenshot from 2021-07-13 09-15-29](https://user-images.githubusercontent.com/19554347/125375047-e4fadc80-e3ba-11eb-9cdd-f34cd52a3b5c.png)
 
-Then use a image to verify the TensorFlow Lite model. The result as you could see 😙:  
+Then use a zero.png to verify the TensorFlow Lite model. The result as you could see 😙:  
 ![Screenshot from 2021-07-13 09-02-59](https://user-images.githubusercontent.com/19554347/125374721-29d24380-e3ba-11eb-8f61-e1087f3aaeb8.png)
 
 
